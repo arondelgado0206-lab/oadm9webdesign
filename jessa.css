@@ -90,12 +90,22 @@ body {
 }
 
 .nav {
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
+  background: black;
+  border-top: 1px solid darkgray;
+  border-bottom: 1px solid darkgray;
   display: flex;
   justify-content: space-around;
-  padding: 12px;
+  padding: 14px 5px;
   flex-wrap: wrap;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+  padding: 6px 10px;
+  border-radius: 5px;
 }
 
 .nav a {
@@ -104,12 +114,12 @@ body {
   font-size: 14px;
   padding: 6px 10px;
   border-radius: 5px;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .nav a:hover {
   color: #8fd3ff;
-  background: rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .card {
