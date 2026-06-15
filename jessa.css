@@ -23,7 +23,7 @@ body {
 .cover {
   position: relative;
   height: 400px;
-  background: url("cover.jpg") center/cover no-repeat;
+  background: url("jcover.jfif") center/cover no-repeat;
   overflow: hidden;
 }
 
@@ -181,12 +181,12 @@ body {
   object-fit:cover;
 }
 
-.verified-icon{
-  width:16px;
-  height:16px;
-  object-fit:contain;
-  margin-left:5px;
-  vertical-align:middle;
+.verified-icon {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-left: 4px;
 }
 
 .post p{
