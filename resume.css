@@ -1,4 +1,4 @@
- {
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -23,7 +23,7 @@ body {
 .cover {
   position: relative;
   height: 400px;
-  background: url("jcover.jfif") center/cover no-repeat;
+  background: url("cover.jpg") center/cover no-repeat;
   overflow: hidden;
 }
 
@@ -107,12 +107,6 @@ body {
   padding: 6px 10px;
   border-radius: 5px;
 }
-
-.nav a:hover {
-  color: #8fd3ff;
-  background: rgba(255, 255, 255, 0.08);
-}
-
 .card{
   background:#111;
   margin:10px;
