@@ -23,7 +23,7 @@ body {
 .cover {
   position: relative;
   height: 400px;
-  background: url("cover.jfif") center/cover no-repeat;
+  background: url("jcover.jfif") center/cover no-repeat;
   overflow: hidden;
 }
 
