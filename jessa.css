@@ -138,7 +138,7 @@ body {
   overflow-x:auto;
   overflow-y:hidden;
 
-  /* Hide scrollbar */
+
   scrollbar-width:none;    
   -ms-overflow-style:none;   
 }
