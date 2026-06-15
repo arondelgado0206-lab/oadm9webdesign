@@ -261,11 +261,10 @@ body {
 
 
 @media (max-width:600px){
-
   .app{
     width:100%;
   }
-
+}
   .cover h2{
     font-size:28px;
   }
