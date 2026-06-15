@@ -1,4 +1,4 @@
- {
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -20,26 +20,25 @@ body {
   overflow: hidden;
 }
 
-
 .cover {
   position: relative;
   height: 400px;
-  background: url("cover.jpg") center/cover no-repeat;
+  background: url("jcover.jfif") center/cover no-repeat;
   overflow: hidden;
 }
+
 
 .cover::after {
   content: "";
   position: absolute;
   inset: 0;
-  pointer-events: none;
   background: rgba(0, 0, 0, 0.35);
   pointer-events: none;
 }
 
 .profile-content {
   position: absolute;
-  bottom: 25px;
+  bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -54,8 +53,9 @@ body {
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-  border: 3px solid rgba(255, 255, 255, 0.2);
+  border: 3px solid rgba(255, 255, 255, 0.15);
 }
+
 
 .cover h2 {
   margin-top: 15px;
@@ -63,15 +63,14 @@ body {
   color: white;
   text-shadow: 2px 2px 8px black;
 }
-
 .icon-btn {
   position: absolute;
   top: 15px;
   left: 15px;
-  z-index: 9999;
-  color: white;
-  font-size: 24px;
+  z-index: 3;
   text-decoration: none;
+  color: white; 
+  font-size: 24px;
 }
 
 .icon-btn i {
@@ -85,7 +84,7 @@ body {
   align-items: center;
   width: 100%;
   margin-top: 25px;
-  padding: 0 10px;
+  padding: 0 15px;
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -98,12 +97,12 @@ body {
 
 .stats strong {
   display: block;
-  font-size: 28px;
+  font-size: 30px;
 }
 
 .stats span {
   font-size: 14px;
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
 .nav {
@@ -120,9 +119,9 @@ body {
   color: white;
   text-decoration: none;
   font-size: 14px;
-  transition: 0.3s;
   padding: 6px 10px;
   border-radius: 5px;
+  transition: 0.3s ease;
 }
 
 .nav a:hover {
@@ -137,8 +136,6 @@ body {
   padding:20px;
   overflow-x:auto;
   overflow-y:hidden;
-
-
   scrollbar-width:none;    
   -ms-overflow-style:none;   
 }
@@ -184,14 +181,6 @@ body {
   object-fit:cover;
 }
 
-.verified-icon{
-  width:16px;
-  height:16px;
-  object-fit:contain;
-  margin-left:5px;
-  vertical-align:middle;
-}
-
 .post p{
   padding:0 15px;
   font-size:18px;
@@ -199,9 +188,14 @@ body {
 }
 
 .verified{
-  color:#00d9ff;
+  width:18px;
+  height:18px;
+  object-fit:contain;
+  vertical-align:middle;
+  margin-left:5px;
+  cursor:pointer;
+  transition:all 0.3s ease;
 }
-
 
 .gallery{
   display:grid;
