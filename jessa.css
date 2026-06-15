@@ -7,7 +7,7 @@
 
 body {
   background: black;
-  min-height: 200vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   color: white;
@@ -27,18 +27,16 @@ body {
   overflow: hidden;
 }
 
-
 .cover::after {
   content: "";
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.35);
-  pointer-events: none;
 }
 
 .profile-content {
   position: absolute;
-  bottom: 30px;
+  bottom: 25px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -53,9 +51,8 @@ body {
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-  border: 3px solid rgba(255, 255, 255, 0.15);
+  border: 3px solid rgba(255, 255, 255, 0.2);
 }
-
 
 .cover h2 {
   margin-top: 15px;
@@ -63,20 +60,7 @@ body {
   color: white;
   text-shadow: 2px 2px 8px black;
 }
-.icon-btn {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  z-index: 3;
-  text-decoration: none;
-  color: white; 
-  font-size: 24px;
-}
 
-.icon-btn i {
-    font-size: 22px;
-    cursor: pointer;
-}
 
 .stats {
   display: flex;
@@ -84,7 +68,7 @@ body {
   align-items: center;
   width: 100%;
   margin-top: 25px;
-  padding: 0 15px;
+  padding: 0 10px;
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -97,12 +81,12 @@ body {
 
 .stats strong {
   display: block;
-  font-size: 30px;
+  font-size: 28px;
 }
 
 .stats span {
   font-size: 14px;
-  opacity: 0.85;
+  opacity: 0.8;
 }
 
 .nav {
