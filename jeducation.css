@@ -130,14 +130,12 @@ h4{
   transition:0.25s;
 }
 
-/* NOTICE */
 .notice p{
   line-height:1.5;
   font-size:15px;
   color:#ddd;
 }
 
-/* POST HEADER */
 .post-header{
   display:flex;
   align-items:center;
@@ -158,10 +156,11 @@ h4{
 }
 
 .verified-icon{
-  width:14px;
-  height:14px;
+  width:16px;
+  height:16px;
   margin-left:5px;
   vertical-align:middle;
+  display:inline-block;
 }
 
 .post p{
