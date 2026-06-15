@@ -20,6 +20,7 @@ body {
   overflow: hidden;
 }
 
+
 .cover {
   position: relative;
   height: 400px;
@@ -33,6 +34,7 @@ body {
   inset: 0;
   background: rgba(0, 0, 0, 0.35);
 }
+
 
 .profile-content {
   position: absolute;
