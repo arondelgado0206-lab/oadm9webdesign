@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Weverse UI</title>
+  <link rel="stylesheet" href="jhome.css">
+</head>
+<body>
+
+<div class="app">
+<div class="header">weverse</div>
+<div class="profile-bar">
+<div class="add"><span>+</span><small>Add</small></div>
+    <div class="profile" onclick="goPage('jessa.html')"><img src="jessa.jfif"><small>JESSA</small></div>
+    <div class="profile" onclick="goPage('aron.html')"><img src="profile.jpg"> <small>ARON</small></div>
+    <div class="profile" onclick="goPage('jael.html')"> <img src="jael.jfif"><small>JAEL</small></div>
+    <div class="profile" onclick="goPage('mychelle.html')"><img src="mychelle.jpg"><small>MYCHELLE</small></div>
+</div>
+
+<div class="card">
+        <h2>JESSA MAE</h2><img src="jalbum.png" class="card-img" onclick="openModal(this.src)">
+        <p>JESSA MAE<br> The 3rd Mini-Album</p>
+        <p class="subtitle">[BSOAD] Official Merch<br>Pre-order now on UA Campus</p>
+    </div>
+
+<div class="card post">
+    <div class="post-header"><img src="jessa.jfif" class="avatar">
+    <div><strong>JESSA MAE</strong><img src="verified.jpg" class="verified" alt="Verified"><br>
+    <small>May 25, 2025</small></div>
+</div>
+    <p>Short intro ❤️</p>
+<div class="gallery">
+    <img src="post1.png" class="big" onclick="openModal(this.src)"></div>
+    <div class="post-actions">
+    <div class="left-actions">
+    <div class="action">
+    <img src="heart.jpg"><span>10K+</span></div>
+<div class="action">
+    <img src="comment.jpg"><span>2K+</span></div>
+</div>
+    <div class="save"><img src="save.jpg"></div>
+</div>
+</div>
+<div class="live">
+    <h3>On Live</h3>
+    <div class="video-container">
+    <div class="live-overlay">LIVE</div>
+    <video id="liveVideo" controls onclick="openVideoFullscreen(this)"><source src="LARGA.mp4" type="video/mp4"></video></div>
+    </div>
+    <div id="imageModal" class="modal" onclick="closeModal()"><img id="modalImg" class="modal-content" alt="Fullscreen Image"></div>
+</div>
+
+<script src="jhome.js"></script>
+
+</body>
+</html>

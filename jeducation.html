@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile UI</title>
+
+  <link rel="stylesheet" href="jeducation.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <!-- COVER -->
+  <div class="cover">
+
+    <div class="profile-content">
+
+      <img src="jessa.jfif" class="profile-pic" alt="Profile Picture">
+
+      <h2>JESSA MAE RELLON</h2>
+
+      <div class="stats">
+
+        <div>
+          <strong>250</strong><br>
+          <span>Following</span>
+        </div>
+
+        <div>
+          <strong>5,445</strong><br>
+          <span>Followers</span>
+        </div>
+
+        <div>
+          <strong>19</strong><br>
+          <span>Albums</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- NAV -->
+  <div class="nav">
+    <a href="jessa.html">Posts</a>
+    <a href="jaboutme.html">About Me</a>
+    <a href="jeducation.html">Educational Background</a>
+    <a href="jcontact.html">Contact</a>
+    <a href="jresume.html">Resume</a>
+    <a href="jgallery.html">Gallery</a>
+  </div>
+
+  <h4>📢 My Learning Journey</h4>
+
+  <div class="card notice">
+    <p>
+      Every step of my education shaped who I am today.  
+      From childhood dreams to my current course in college, this journey is full of lessons, growth, and memories ✨
+    </p>
+  </div>
+
+  <div class="card post">
+
+    <div class="post-header">
+      <img src="jessa.jfif" class="avatar" alt="Avatar">
+
+      <div>
+        <strong>JESSA MAE</strong>
+        <img src="verified.jpg" class="verified-icon"><br>
+        <small>June 01, 2026</small>
+      </div>
+    </div>
+
+    <p>
+      "Where everything started" 🌱<br><br>
+      My primary years were filled with curiosity, simple joys, and learning the basics of life and education.  
+      This is where my dreams slowly began to grow.
+    </p>
+
+    <img src="ej.png" class="post-img" onclick="openModal(this.src)" alt="Primary School">
+
+  </div>
+
+  <div class="card post">
+
+    <div class="post-header">
+      <img src="jessa.jfif" class="avatar" alt="Avatar">
+
+      <div>
+        <strong>JESSA MAE</strong>
+        <img src="verified.jpg" class="verified-icon"><br>
+        <small>June 10, 2026</small>
+      </div>
+    </div>
+
+    <p>
+      "Becoming stronger every step" 💪<br><br>
+      High school taught me discipline, friendship, struggles, and achievements.  
+      I learned how to face challenges and keep moving forward no matter what.
+    </p>
+
+    <img src="jhighschool.png" class="post-img" onclick="openModal(this.src)"alt="High School">
+  </div>
+
+  <div class="card post">
+
+    <div class="post-header">
+      <img src="jessa.jfif" class="avatar" alt="Avatar">
+
+      <div>
+        <strong>JESSA MAE/strong>
+        <img src="verified.jpg" class="verified-icon"><br>
+        <small>Septemper 18, 2025</small>
+      </div>
+    </div>
+
+    <p>
+      "Chasing my future" 🚀<br><br>
+      Now I am taking Bachelor of Science in Office Administration.  
+      College is a journey of responsibility, skills, and preparing for my future career.  
+      Every day is a step closer to my dreams.
+    </p>
+
+
+ <img src="jcollege.png" class="post-img" onclick="openModal(this.src)"alt="College Life">
+  </div>
+
+</div>
+
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <img id="modalImg" class="modal-content">
+</div>
+
+<script src="home.js"></script>
+
+
+</body>
+</html>

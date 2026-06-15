@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Style Gallery</title>
+
+  <link rel="stylesheet" href="jgallery.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Cover -->
+  <div class="cover">
+    <div class="profile-content">
+      <img src="jessa.jfif" class="profile-pic">
+
+      <h2>JESSA MAE RELLON</h2>
+
+      <div class="stats">
+        <div>
+          <strong>250</strong><br>
+          <span>Following</span>
+        </div>
+
+        <div>
+          <strong>5,445</strong><br>
+          <span>Followers</span>
+        </div>
+
+        <div>
+          <strong>19</strong><br>
+          <span>Albums</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <div class="nav">
+    <a href="jessa.html">Posts</a>
+    <a href="jaboutme.html">About Me</a>
+    <a href="jeducation.html">Educational Background</a>
+    <a href="jContact.html">Contact</a>
+    <a href="jresume.html">Resume</a>
+    <a href="jgallery.html" class="active">Gallery</a>
+  </div>
+
+  <!-- Gallery Title -->
+  <div class="gallery-header">
+    <h3>📷 My Gallery</h3>
+    <p>A collection of my favorite memories.</p>
+  </div>
+
+
+  <div class="gallery-grid">
+
+    <img src="jstory1.jfif" onclick="openModal(this.src)">
+    <img src="jstory2.jfif" onclick="openModal(this.src)">
+    <img src="jstory4.jfif" onclick="openModal(this.src)">
+
+    <img src="post1.png" onclick="openModal(this.src)">
+    <img src="jfam.png" onclick="openModal(this.src)">
+    <img src="jfriends.png" onclick="openModal(this.src)">
+
+    <img src="jessa2.jfif" onclick="openModal(this.src)">
+    <img src="jessa1.jfif" onclick="openModal(this.src)">
+    <img src="jessa3.jfif" onclick="openModal(this.src)">
+
+    <img src="t.png" onclick="openModal(this.src)">
+    <img src="j.png" onclick="openModal(this.src)">
+    <img src="j.jfif" onclick="openModal(this.src)">
+
+  </div>
+
+</div>
+
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <img id="modalImg" class="modal-content">
+</div>
+
+<script src="jgallery.js"></script>
+
+</body>
+</html>

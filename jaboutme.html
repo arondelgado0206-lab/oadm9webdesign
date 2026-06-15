@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile UI</title>
+
+  <link rel="stylesheet" href="jaboutme.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <!-- COVER -->
+  <div class="cover">
+
+    <div class="profile-content">
+
+      <img src="jessa.jfif" class="profile-pic">
+
+      <h2>JESSA MAE RELLON</h2>
+
+      <div class="stats">
+
+        <div>
+          <strong>250</strong><br>
+          <span>Following</span>
+        </div>
+
+        <div>
+          <strong>5,445</strong><br>
+          <span>Followers</span>
+        </div>
+
+        <div>
+          <strong>19</strong><br>
+          <span>Albums</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- NAVIGATION -->
+  <div class="nav">
+    <a href="jessa.html">Posts</a>
+    <a href="jaboutme.html">About Me</a>
+    <a href="jeducation.html">Educational Background</a>
+    <a href="jcontact.html">Contact</a>
+    <a href="jresume.html">Resume</a>
+    <a href="jgallery.html">Gallery</a>
+  </div>
+
+  <!-- NOTICE -->
+  <h4>📢 Notice</h4>
+
+  <div class="card notice">
+    <p>
+      Hi! I'm Jessa Mae Rellon!<br>
+      BS Office Administration | 2nd Year College<br>
+      Welcome to my little space—glad you stopped by! ♡
+    </p>
+  </div>
+
+  <!-- POST 1 -->
+  <div class="card post">
+
+    <div class="post-header">
+      <img src="jessa.jfif" class="avatar">
+
+      <div>
+        <strong>JESSA MAE</strong>
+        <img src="verified.jpg" class="verified-icon">
+        <br>
+        <small>May 25, 2025</small>
+      </div>
+    </div>
+
+    <p>
+      "Malayo pa, pero malayo na"<br><br>
+      Just taking it one step at a time, keeping all the good memories,<br>
+      and moving closer to my dreams!
+    </p>
+
+    <img src="post1.png" class="post-img" onclick="openModal(this.src)">
+
+    <div class="post-actions">
+
+      <div class="left-actions">
+
+        <div class="action">
+          <img src="heart.jpg">
+          <span>10K+</span>
+        </div>
+
+        <div class="action">
+          <img src="comment.jpg">
+          <span>2K+</span>
+        </div>
+
+      </div>
+
+      <div class="save">
+        <img src="save.jpg">
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- POST 2 -->
+  <div class="card post">
+
+    <div class="post-header">
+      <img src="jessa.jfif" class="avatar">
+
+      <div>
+        <strong>JESSA MAE</strong>
+        <img src="verified.jpg" class="verified-icon">
+        <br>
+        <small>May 25, 2025</small>
+      </div>
+    </div>
+
+    <p>My Family ❤️</p>
+
+    <img src="jfam.png" class="post-img" onclick="openModal(this.src)">
+
+    <div class="post-actions">
+
+      <div class="left-actions">
+
+        <div class="action">
+          <img src="heart.jpg">
+          <span>8K+</span>
+        </div>
+
+        <div class="action">
+          <img src="comment.jpg">
+          <span>1K+</span>
+        </div>
+
+      </div>
+
+      <div class="save">
+        <img src="save.jpg">
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- POST 3 -->
+  <div class="card post">
+
+    <div class="post-header">
+      <img src="jessa.jfif" class="avatar">
+
+      <div>
+        <strong>JESSA MAE</strong>
+        <img src="verified.jpg" class="verified-icon">
+        <br>
+        <small>May 25, 2025</small>
+      </div>
+    </div>
+
+    <p>Friends 💙</p>
+
+    <img src="jfriends.png" class="post-img" onclick="openModal(this.src)">
+
+    <div class="post-actions">
+
+      <div class="left-actions">
+
+        <div class="action">
+          <img src="heart.jpg">
+          <span>5K+</span>
+        </div>
+
+        <div class="action">
+          <img src="comment.jpg">
+          <span>900+</span>
+        </div>
+
+      </div>
+
+      <div class="save">
+        <img src="save.jpg">
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="card post">
+
+    <div class="post-header">
+      <img src="jessa.jfif" class="avatar">
+
+      <div>
+        <strong>JESSA MAE</strong>
+        <img src="verified.jpg" class="verified-icon">
+        <br>
+        <small>May 25, 2025</small>
+      </div>
+    </div>
+
+    <p><bold>Black & White</bold></p>
+
+    <img src="jfave.png" class="post-img" onclick="openModal(this.src)">
+
+    <div class="post-actions">
+
+      <div class="left-actions">
+
+        <div class="action">
+          <img src="heart.jpg">
+          <span>3K+</span>
+        </div>
+
+        <div class="action">
+          <img src="comment.jpg">
+          <span>500+</span>
+        </div>
+
+      </div>
+
+      <div class="save">
+        <img src="save.jpg">
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- IMAGE MODAL -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <img id="modalImg" class="modal-content">
+</div>
+
+<script src="home.js"></script>
+
+</body>
+</html>
