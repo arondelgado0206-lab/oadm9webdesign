@@ -1,0 +1,317 @@
+```css
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:black;
+  display:flex;
+  justify-content:center;
+  color:white;
+  min-height:175vh;
+}
+
+.app{
+  width:650px;
+  background:#000;
+  border:1px solid #333;
+  overflow:hidden;
+}
+
+.header{
+  text-align:center;
+  font-size:48px;
+  font-weight:bold;
+  letter-spacing:1px;
+  margin:20px 0;
+  color:white;
+}
+
+.profile-bar{
+  display:flex;
+  gap:15px;
+  overflow-x:auto;
+  overflow-y:hidden;
+  padding:20px;
+  border-top:1px solid #333;
+  border-bottom:1px solid #333;
+  background:#000;
+  scrollbar-width:none;
+}
+
+.profile-bar::-webkit-scrollbar{
+  display:none;
+}
+
+/* ========================= ADD BUTTON ========================= */
+.add{
+  min-width:110px;
+  height:110px;
+  border-radius:20px;
+  background:#111;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
+  cursor:pointer;
+  border:1px solid #333;
+}
+
+.add span{
+  font-size:72px;
+  color:#666;
+  margin-top:-8px;
+}
+
+.add small{
+  display:none;
+}
+
+/* ========================= PROFILE ========================= */
+.profile{
+  min-width:100px;
+  text-align:center;
+  flex-shrink:0;
+  cursor:pointer;
+}
+
+.profile img{
+  width:100px;
+  height:100px;
+  border-radius:20px;
+  object-fit:cover;
+  transition:0.3s;
+}
+
+.profile img:hover{
+  transform:scale(1.05);
+}
+
+.profile small{
+  display:block;
+  margin-top:8px;
+  font-size:14px;
+  font-weight:bold;
+  line-height:1.2;
+  color:white;
+}
+
+.card{
+  background:lightpink;
+  border:1px solid #333;
+  border-radius:20px;
+  padding:20px;
+  margin:15px 12px;
+  height:300px;
+  position:relative;
+  overflow:hidden;
+}
+
+.card h2{
+  color:white;
+  font-size:22px;
+  font-weight:bold;
+}
+
+.card p{
+  position:absolute;
+  left:20px;
+  bottom:65px;
+  width:300px;
+  color:white;
+  font-size:22px;
+  font-weight:bold;
+  line-height:1.4;
+}
+
+.card .subtitle{
+  position:absolute;
+  left:20px;
+  bottom:20px;
+  width:300px;
+  color:black;
+  font-size:13px;
+  line-height:1.5;
+}
+
+.card-img{
+  position:absolute;
+  right:30px;
+  top:25px;
+  width:180px;
+  height:250px;
+  object-fit:cover;
+  border-radius:15px;
+}
+
+/* ========================= POST CARD ========================= */
+.post{
+  background:#111;
+  margin:15px 12px;
+  border-radius:20px;
+  overflow:hidden;
+  border:1px solid #333;
+  padding:0;
+  height:auto;
+}
+
+.post-header{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:15px;
+}
+
+.avatar{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+.post-header strong{
+  font-size:16px;
+  color:white;
+}
+
+.post-header small{
+  font-size:12px;
+  color:#aaa;
+}
+
+.verified{
+  color:#00d9ff;
+  font-size:14px;
+  margin-left:5px;
+}
+
+.post p{
+  position:static;
+  padding:0 15px;
+  margin-bottom:10px;
+  font-size:18px;
+  color:white;
+  width:auto;
+}
+
+.gallery{
+  margin-top:0;
+}
+
+.gallery .big{
+  width:100%;
+  height:350px;
+  object-fit:cover;
+  display:block;
+}
+
+.post-actions{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 20px;
+}
+
+.left-actions{
+  display:flex;
+  gap:20px;
+}
+
+.action{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  cursor:pointer;
+}
+
+.action img{
+  width:22px;
+  height:22px;
+  object-fit:contain;
+  transition:0.2s;
+}
+
+.action span{
+  font-size:14px;
+  color:#ddd;
+}
+
+.save img{
+  width:22px;
+  height:22px;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+.action img:hover,
+.save img:hover{
+  transform:scale(1.2);
+}
+
+.live{
+  background:#111;
+  border:1px solid #333;
+  border-radius:20px;
+  margin:15px 12px;
+  padding:15px;
+}
+
+.live h3{
+  font-size:18px;
+  color:white;
+  margin-bottom:15px;
+}
+
+.video-container{
+  position:relative;
+}
+
+video{
+  width:100%;
+  height:350px;
+  border-radius:15px;
+  object-fit:cover;
+  display:block;
+  background:#222;
+}
+
+.live-overlay{
+  position:absolute;
+  top:15px;
+  left:15px;
+  background:#ff3b30;
+  color:white;
+  padding:6px 14px;
+  border-radius:10px;
+  font-size:14px;
+  font-weight:bold;
+}
+
+
+.modal{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.95);
+  z-index:9999;
+  justify-content:center;
+  align-items:center;
+  cursor:pointer;
+}
+
+.modal-content{
+  max-width:95%;
+  max-height:95%;
+  object-fit:contain;
+  border-radius:10px;
+}
+
+.modal.show{
+  display:flex;
+}

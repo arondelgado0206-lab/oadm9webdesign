@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: black;
+  color: white;
+}
+
+.app {
+  width: 100%;
+  max-width: 650px;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.card.post {
+  background: #111;
+  border: 1px solid #333;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.verified-icon {
+  width: 14px;
+  height: 14px;
+}
+
+.post p {
+  margin-top: 10px;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+.post-image {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.left-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+}
+
+.action img {
+  width: 18px;
+  height: 18px;
+  object-fit: cover;
+}
+
+.save img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.card.post:hover {
+  border-color: #555;
+  transform: scale(1.01);
+  transition: 0.2s;
+}

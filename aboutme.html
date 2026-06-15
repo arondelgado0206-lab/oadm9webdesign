@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile UI</title>
+  <link rel="stylesheet" href="aboutme.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <div class="cover">
+    <div class="profile-content">
+      <img src="profile.jpg" class="profile-pic">
+      <h2>ARON JAMES DELGADO</h2>
+
+      <div class="stats">
+        <div><strong>8</strong><br><span>Following</span></div>
+        <div><strong>1,500</strong><br><span>Followers</span></div>
+        <div><strong>21</strong><br><span>Albums</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav">
+    <a href="aron.html">Posts</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="education.html">Educational Background</a>
+    <a href="contact.html">Contact</a>
+    <a href="resume.html">Resume</a>
+    <a href="gallery.html">Gallery</a>
+  </div>
+
+
+  <h4>📢 Notice</h4>
+
+  <div class="card notice">
+    <p>
+Hi! I'm Aron James Delgado<br>BS Office Administration| 2nd Year College<br>Welcome to my little space—glad you stopped by!♡
+    </p>
+  </div>
+
+  <!-- POST 1 -->
+  <div class="card post">
+
+    <div class="post-header">
+      <img src="profile.jpg" class="avatar">
+
+      <div>
+        <strong>ARON</strong>
+
+ 
+        <img src="verified.jpg" class="verified-icon">
+
+        <br>
+        <small>May 25, 2025</small>
+      </div>
+    </div>
+
+    <p>"Malayo pa, pero malayo na"<br><br> Just taking it one step at a time, Keeping all the good  memories,<br> and moving closer to my dreams!</p>
+    <img src="aboutme1.jpg" class="post-img"onclick="openModal(this.src)">
+
+    <div class="post-actions">
+
+      <div class="left-actions">
+
+        <div class="action">
+          <img src="heart.jpg">
+          <span>10K+</span>
+        </div>
+
+        <div class="action">
+          <img src="comment.jpg">
+          <span>2K+</span>
+        </div>
+
+      </div>
+
+      <div class="save">
+        <img src="save.jpg">
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="card post">
+
+    <div class="post-header">
+      <img src="profile.jpg" class="avatar">
+
+      <div>
+        <strong>ARON</strong>
+        <img src="verified.jpg" class="verified-icon">
+        <br>
+        <small>May 25, 2025</small>
+      </div>
+    </div>
+
+    <p>Memories ✨</p>
+    <img src="aboutme2.jpg" class="post-img" onclick="openModal(this.src)">
+
+    <div class="post-actions">
+
+      <div class="left-actions">
+
+        <div class="action">
+          <img src="heart.jpg">
+          <span>8K+</span>
+        </div>
+
+        <div class="action">
+          <img src="comment.jpg">
+          <span>1K+</span>
+        </div>
+
+      </div>
+
+      <div class="save">
+        <img src="save.jpg">
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- POST 3 -->
+  <div class="card post">
+
+    <div class="post-header">
+      <img src="profile.jpg" class="avatar">
+
+      <div>
+        <strong>ARON</strong>
+        <img src="verified.jpg" class="verified-icon">
+        <br>
+        <small>May 25, 2025</small>
+      </div>
+    </div>
+
+    <p>My FAvorites 💙</p>
+    <img src="fave.png" class="post-img" onclick="openModal(this.src)">
+
+    <div class="post-actions">
+
+      <div class="left-actions">
+
+        <div class="action">
+          <img src="heart.jpg">
+          <span>5K+</span>
+        </div>
+
+        <div class="action">
+          <img src="comment.jpg">
+          <span>900+</span>
+        </div>
+
+      </div>
+
+      <div class="save">
+        <img src="save.jpg">
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="card post">
+
+    <div class="post-header">
+      <img src="profile.jpg" class="avatar">
+
+      <div>
+        <strong>ARON</strong>
+        <img src="verified.jpg" class="verified-icon"><br>
+        <small>May 25, 2025</small>
+      </div>
+    </div>
+
+    <p>Another moment 📸</p>
+    <img src="aboutme4.png" class="post-img" onclick="openModal(this.src)">
+
+
+    <div class="post-actions">
+
+      <div class="left-actions">
+
+        <div class="action">
+          <img src="heart.jpg">
+          <span>3K+</span>
+        </div>
+
+        <div class="action">
+          <img src="comment.jpg">
+          <span>500+</span>
+        </div>
+
+      </div>
+
+      <div class="save">
+        <img src="save.jpg">
+      </div>
+    </div>
+  </div>
+</div>
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <img id="modalImg" class="modal-content">
+</div>
+
+  <script src="aboutme.js"></script>
+</body>
+</html>

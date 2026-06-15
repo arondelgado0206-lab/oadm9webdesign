@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weverse UI</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+<div class="app">
+    <div class="header">weverse</div>
+
+    <div class="profile-bar">
+        <div class="add"><span>+</span><small>Add</small></div>
+        <div class="profile" onclick="goPage('aron.html')"><img src="profile.jpg"><small>ARON</small></div>
+        <div class="profile" onclick="goPage('jessa.html')"><img src="jessa.jfif"><small>JESSA</small></div>
+        <div class="profile" onclick="goPage('jael.html')"><img src="jael.jfif"><small>JAEL</small></div>
+        <div class="profile" onclick="goPage('mychelle.html')"><img src="mychelle.jpg"><small>MYCHELLE</small></div>
+    </div>
+
+    <div class="card">
+        <h2>ARON</h2>
+        <img src="album2.jpg" class="card-img" onclick="openModal(this.src)">
+        <p>ARON JAMES<br> The 1st Album</p>
+        <p class="subtitle">[BSOAD] Official Merch<br>Pre-order now on UA Campus</p></div>
+    
+    <div class="card post">
+    <div class="post-header">
+        <img src="profile.jpg" class="avatar">
+        <div><strong>ARON</strong><span class="verified">✔</span><br><small>May 25, 2025</small></div>
+    </div>
+
+    <p>Short intro ❤️</p>
+    <div class="gallery">
+        <img src="aboutme1.jpg" class="big" onclick="openModal(this.src)"></div>
+
+    <div class="post-actions">
+    <div class="left-actions">
+        <div class="action"><img src="heart.jpg"><span>10K+</span></div>
+    <div class="action"><img src="comment.jpg"><span>2K+</span></div>
+    </div>
+        <div class="save"><img src="save.jpg"></div>
+    </div>
+    </div>
+
+    <div class="live">
+        <h3>On Live</h3><div class="video-container"><div class="live-overlay">LIVE</div>
+        <video controls onclick="openVideoFullscreen(this)"><source src="unis.mp4" type="video/mp4"></video></div>
+   </div>
+   </div>
+
+
+<div id="imageModal" class="modal" onclick="closeModal()">
+    <img id="modalImg" class="modal-content">
+</div>
+
+<script src="home.js"></script>
+
+</body>
+</html>

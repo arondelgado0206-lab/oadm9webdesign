@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Style Gallery</title>
+
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+<div class="app">
+  <div class="cover">
+  <div class="profile-content">
+  <img src="profile.jpg" class="profile-pic">
+  <h2>ARON JAMES DELGADO</h2>
+
+  <div class="stats">
+      <div><strong>48</strong><br><span>Posts</span></div>
+      <div><strong>1,500</strong><br> <span>Followers</span></div>
+      <div><strong>8</strong><br><span>Following</span></div>
+  </div>
+  </div>
+  </div>
+
+  <div class="nav">
+    <a href="aron.html">Posts</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="education.html">Educational Background</a>
+    <a href="contact.html">Contact</a>
+    <a href="resume.html">Resume</a>
+    <a href="gallery.html" class="active">Gallery</a>
+  </div>
+
+  <div class="gallery-header">
+    <h3>📷 My Gallery</h3>
+    <p>A collection of my favorite memories.</p>
+  </div>
+
+<div class="gallery-grid">
+    <img src="story3.jfif" onclick="openModal(this.src)">
+    <img src="story4.jfif" onclick="openModal(this.src)">
+    <img src="story5.jfif" onclick="openModal(this.src)">
+
+    <img src="aboutme1.jpg" onclick="openModal(this.src)">
+    <img src="aboutme2.jpg" onclick="openModal(this.src)">
+    <img src="aboutme4.png" onclick="openModal(this.src)">
+
+    <img src="aboutme7.jfif" onclick="openModal(this.src)">
+    <img src="aboutme9.jfif" onclick="openModal(this.src)">
+    <img src="aboutme8.jfif" onclick="openModal(this.src)">
+
+    <img src="insta1.jfif" onclick="openModal(this.src)">
+    <img src="insta2.jfif" onclick="openModal(this.src)">
+    <img src="insta3.jfif" onclick="openModal(this.src)">
+
+  </div>
+
+</div>
+
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <img id="modalImg" class="modal-content">
+</div>
+
+<script src="gallery.js"></script>
+
+</body>
+</html>

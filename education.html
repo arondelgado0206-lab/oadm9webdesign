@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile UI</title>
+
+  <link rel="stylesheet" href="education.css">
+</head>
+
+<body>
+
+  <div class="app">
+  <div class="cover">
+  <div class="profile-content">
+      <img src="profile.jpg" class="profile-pic">
+      <h2>ARON JAMES DELGADO</h2>
+  <div class="stats">
+  <div><strong>8</strong><br><span>Following</span></div>
+  <div><strong>1,500</strong><br><span>Followers</span></div>
+  <div><strong>21</strong><br><span>Albums</span></div>
+  </div>
+  </div>
+  </div>
+
+  <div class="nav">
+    <a href="aron.html">Posts</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="education.html">Educational Background</a>
+    <a href="contact.html">Contact</a>
+    <a href="resume.html">Resume</a>
+    <a href="gallery.html">Gallery</a>
+
+  </div>
+  <h4>📢 My Learning Journey</h4>
+
+  <div class="card notice">
+    <p>
+      Every step of my education shaped who I am today.  
+      From childhood dreams to my current course in college, this journey is full of lessons, growth, and memories ✨
+    </p>
+  </div>
+
+  <div class="card post">
+  <div class="post-header">
+    <img src="profile.jpg" class="avatar">
+    <div><strong>ARON</strong>
+    <img src="verified.jpg" class="verified-icon"><br><small>June 01, 2011</small></div>
+  </div>
+
+    <p>
+      "Where everything started" 🌱<br><br>
+      My primary years were filled with curiosity, simple joys, and learning the basics of life and education.  
+      This is where my dreams slowly began to grow.
+    </p>
+
+    <img src="primary.png" class="post-img"onclick="openModal(this.src)">
+
+  </div>
+
+  <div class="card post">
+
+    <div class="post-header">
+      <img src="profile.jpg" class="avatar">
+
+      <div>
+        <strong>ARON</strong>
+       <img src="verified.jpg" class="verified-icon"> <br>
+        <small>March 08, 2023</small>
+      </div>
+    </div>
+
+    <p>
+      "Becoming stronger every step" 💪<br><br>
+      High school taught me discipline, friendship, struggles, and achievements.  
+      I learned how to face challenges and keep moving forward no matter what.
+    </p>
+    <img src="secondary.png" class="post-img"onclick="openModal(this.src)"> </div>
+
+  <div class="card post">
+  <div class="post-header">
+    <img src="profile.jpg" class="avatar">
+    <div><strong>ARON</strong><img src="verified.jpg" class="verified-icon"><br><small>August 10, 2025</small></div>
+  </div>
+
+  <p>
+   "Chasing my future" 🚀<br><br>
+   Now I am taking Bachelor of Science in Office Administration.  
+   College is a journey of responsibility, skills, and preparing for my future career.  
+   Every day is a step closer to my dreams.
+  </p>
+
+  <img src="college.png" class="post-img" onclick="openModal(this.src)">
+
+</div>
+</div>
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <img id="modalImg" class="modal-content">
+</div>
+
+  <script src="aboutme.js"></script>
+
+</body>
+</html>
