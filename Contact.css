@@ -1,4 +1,4 @@
-{
+ {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,7 +7,7 @@
 
 body {
   background: black;
-  min-height: 100vh;
+  min-height: 200vh;
   display: flex;
   justify-content: center;
   color: white;
@@ -32,9 +32,10 @@ body {
   content: "";
   position: absolute;
   inset: 0;
+  pointer-events: none;
   background: rgba(0, 0, 0, 0.35);
+  pointer-events: none;
 }
-
 
 .profile-content {
   position: absolute;
@@ -63,6 +64,20 @@ body {
   text-shadow: 2px 2px 8px black;
 }
 
+.icon-btn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 9999;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.icon-btn i {
+    font-size: 22px;
+    cursor: pointer;
+}
 
 .stats {
   display: flex;
@@ -114,6 +129,7 @@ body {
   color: #8fd3ff;
   background: rgba(255, 255, 255, 0.08);
 }
+
 
 .social-container{
   width:95%;
