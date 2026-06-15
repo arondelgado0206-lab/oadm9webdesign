@@ -7,7 +7,7 @@
 
 body {
   background: black;
-  min-height: 200vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   color: white;
@@ -20,11 +20,10 @@ body {
   overflow: hidden;
 }
 
-
 .cover {
   position: relative;
   height: 400px;
-  background: url("cover.jpg") center/cover no-repeat;
+  background: url("jcover.jfif") center/cover no-repeat;
   overflow: hidden;
 }
 
@@ -32,9 +31,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  pointer-events: none;
   background: rgba(0, 0, 0, 0.35);
-  pointer-events: none;
 }
 
 .profile-content {
@@ -64,20 +61,6 @@ body {
   text-shadow: 2px 2px 8px black;
 }
 
-.icon-btn {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  z-index: 9999;
-  color: white;
-  font-size: 24px;
-  text-decoration: none;
-}
-
-.icon-btn i {
-    font-size: 22px;
-    cursor: pointer;
-}
 
 .stats {
   display: flex;
