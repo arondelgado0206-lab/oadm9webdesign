@@ -23,7 +23,7 @@ body {
 .cover {
   position: relative;
   height: 400px;
-  background: url("jcover.jfif") center/cover no-repeat;
+  background: url("cover.jpg") center/cover no-repeat;
   overflow: hidden;
 }
 
@@ -35,7 +35,6 @@ body {
   background: rgba(0, 0, 0, 0.35);
   pointer-events: none;
 }
-
 
 .profile-content {
   position: absolute;
