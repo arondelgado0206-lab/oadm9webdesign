@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile UI - Resume</title>
+  <link rel="stylesheet" href="jresume.css">
+</head>
+<body>
+
+<div class="app">
+  <div class="cover">
+  <div class="profile-content">
+      <img src="jessa.jfif" class="profile-pic" alt="Profile">
+      <h2>JESSA MAE RELLON</h2>
+  <div class="stats">
+      <div><strong>250</strong><br><span>Following</span></div>
+      <div><strong>5,445</strong><br><span>Followers</span></div>
+      <div><strong>19</strong><br><span>Albums</span></div>
+  </div>
+
+  </div>
+  </div>
+
+  <div class="nav">
+    <a href="jessa.html">Posts</a>
+    <a href="jaboutme.html">About Me</a>
+    <a href="jeducation.html">Educational Background</a>
+    <a href="jContact.html">Contact</a>
+    <a href="jresume.html">Resume</a>
+    <a href="jgallery.html">Gallery</a>
+  </div>
+
+  <!-- RESUME POST -->
+  <div class="card post">
+
+    <div class="post-header">
+      <img src="jessa.jfif" class="avatar" alt="Avatar">
+
+      <div>
+        <strong>JESSA MAE</strong>
+        <img src="verified.jpg" class="verified-icon" alt="Verified">
+        <br>
+        <small>January 10, 2026</small>
+      </div>
+    </div>
+
+    <p>
+      <strong>MY RESUME:</strong><br>
+      Dedicated and detail-oriented individual seeking an Administrative
+      Assistant position. Experienced in organizing tasks, maintaining
+      records, and supporting daily office operations. Skilled in
+      scheduling, reporting, and document management, with a strong
+      commitment to efficiency and teamwork.
+    </p>
+
+    <img src="jresume22.png"class="post-img"alt="Resume"onclick="openModal(this.src)">
+ </div>
+
+ <div class="card post">
+ <div class="post-header">
+     <img src="jessa.jfif" class="avatar" alt="Avatar">
+
+  <div>
+    <strong>JESSA MAE</strong>
+    <img src="verified.jpg" class="verified-icon" alt="Verified"><br><small>January 10, 2026</small></div>
+  </div>
+
+    <p>
+     <strong>CERTIFICATES (SEMINARS & TRAININGS):</strong><br>
+      • Recieving and Responding to Workplace Communication<br>
+      • English for Business and Entrepreneurship<br>
+      • Participating in Workplace Communication<br>
+      • Redefining Human Communication through Artificial Intelligence
+    </p>
+
+<div class="image-grid">
+  <img src="resume1.jpg"class="post-img"alt="Certificate 1"onclick="openModal(this.src)">
+  <img src="resume2.jpg"class="post-img" alt="Certificate 2"onclick="openModal(this.src)">
+  <img src="resume3.jfif"class="post-img" alt="Certificate 3" onclick="openModal(this.src)">
+  <img src="resume4.jfif"class="post-img" alt="Certificate 4"onclick="openModal(this.src)" >
+ </div>
+ </div>
+ </div>
+
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <img id="modalImg" class="modal-content" alt="Full Size Image">
+</div>
+
+<script src="aboutme.js"></script>
+
+</body>
+</html>

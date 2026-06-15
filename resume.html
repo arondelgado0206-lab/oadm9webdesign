@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Resume</title>
+  <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+  <div class="app">
+  <div class="cover">
+  <div class="profile-content">
+      <img src="profile.jpg" class="profile-pic" alt="Profile">
+      <h2>ARON JAMES DELGADO</h2>
+  <div class="stats">
+      <div><strong>8</strong><br><span>Following</span></div>
+      <div><strong>1,500</strong><br><span>Followers</span></div>
+      <div><strong>21</strong><br><span>Albums</span></div>
+  </div>
+
+  </div>
+  </div>
+
+  <div class="nav">
+    <a href="aron.html">Posts</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="education.html">Educational Background</a>
+    <a href="Contact.html">Contact</a>
+    <a href="resume.html">Resume</a>
+    <a href="gallery.html">Gallery</a>
+  </div>
+
+  <div class="card post">
+
+    <div class="post-header">
+      <img src="profile.jpg" class="avatar" alt="Avatar">
+
+      <div>
+        <strong>ARON</strong>
+        <img src="verified.jpg" class="verified-icon" alt="Verified">
+        <br>
+        <small>January 10, 2026</small>
+      </div>
+    </div>
+
+    <p>
+      <strong>MY RESUME:</strong><br>
+      Dedicated and detail-oriented individual seeking an Administrative
+      Assistant position. Experienced in organizing tasks, maintaining
+      records, and supporting daily office operations. Skilled in
+      scheduling, reporting, and document management, with a strong
+      commitment to efficiency and teamwork.
+    </p>
+
+    <img src="resume.png"class="post-img"alt="Resume"onclick="openModal(this.src)">
+ </div>
+
+ <div class="card post">
+ <div class="post-header">
+     <img src="profile.jpg" class="avatar" alt="Avatar">
+
+  <div>
+    <strong>ARON</strong>
+    <img src="verified.jpg" class="verified-icon" alt="Verified"><br><small>January 10, 2026</small></div>
+  </div>
+
+    <p>
+      <strong>CERTIFICATES (SEMINARS & TRAININGS):</strong><br>
+      • Seminar On Work Ethics<br>
+      • Orientaton on Internet Media and Information Literacy and Cybersecurity <br>
+      • Introduction to Bookeeping<br>
+      • Participation On Workplace Communicaton
+    </p>
+
+<div class="image-grid">
+  <img src="cert1.png"class="post-img"alt="Certificate 1"onclick="openModal(this.src)">
+  <img src="cert2.jpg"class="post-img" alt="Certificate 2"onclick="openModal(this.src)">
+  <img src="cert3.jpg"class="post-img" alt="Certificate 3" onclick="openModal(this.src)">
+  <img src="cert4.jpg"class="post-img" alt="Certificate 4"onclick="openModal(this.src)" >
+ </div>
+ </div>
+ </div>
+
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <img id="modalImg" class="modal-content">
+</div>
+
+  <script src="aboutme.js"></script>
+</body>
+</html>
